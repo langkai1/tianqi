@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/index.css">
+        <meta name="viewport"  content="width=device-width">
+        <script src="js/rem.js"></script>
+         <script src="js/jquery3.2.1.min.js"></script>
+        <script src="js/index.js"></script>  
+    </head>
+    <body>
+    <div class="header hide">
+    	<div class="region">
+    	北京市&nbsp;海淀区
+    	</div>
+    	<div class="condition">
+    		<p>空气</p>
+    		<p>轻度污染</p>
+    	</div>
+    	<div class="temperature">10°</div>
+    	<div class="tqi">晴</div>
+    	<div class="tem">
+    		<span>湿度</span>
+    		<span>57%</span>
+    	</div>
+    	<div class="anhao">你若安好，便是晴天～</div>
+    </div>
+    <div class="tt hide">
+    	<div class="today">
+    		<span>
+    			<div class="zuo">今天</div>
+    			<div class="you" id="tdt">17/3°</div>
+    		</span>
+    		<span>
+    			<div class="zuo" id="tdc">晴转多云</div>
+    			<div class="taiyang" id="tdp"></div>
+    		</span>
+    	</div>
+    	<div class="tomorrow">
+    		<span>
+    		    <div class="zuo">明天</div>
+    		    <div class="you" id="tmt">17/5°</div>
+    		</span>
+    		<span>
+    		    <div class="zuo" id="tmc">多云</div>
+    			<div class="bg"></div>
+    		</span>
+    	</div>
+    </div>
+    <div class="zhuanbo1 hide">
+    	<ul class="zhuan">
+    		<!-- <ul>
+    			<li class="now">
+    			    <p class="txt-time">06:10</p>
+    			    <div class="hours"><img src="img/richu.png" alt=""></div>
+    			    <p class="txt-key">日出</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">07:00</p>
+    			    <div class="hours"><img src="img/taiyang.png" alt=""></div>
+    			    <p class="txt-key">6°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">08:00</p>
+    			    <div class="hours"><img src="img/taiyang.png" alt=""></div>
+    			    <p class="txt-key">10°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">09:00</p>
+    			    <div class="hours"><img src="img/taiyang.png" alt=""></div>
+    			    <p class="txt-key">13°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">10:00</p>
+    			    <div class="hours"><img src="img/taiyang.png" alt=""></div>
+    			    <p class="txt-key">16°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">11:00</p>
+    			    <div class="hours"><img src="img/taiyang.png" alt=""></div>
+    			    <p class="txt-key">18°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">12:00</p>
+    			    <div class="hours"><img src="img/taiyang.png" alt=""></div>
+    			    <p class="txt-key">20°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">13:00</p>
+    			    <div class="hours"><img src="img/taiyang.png" alt=""></div>
+    			    <p class="txt-key">22°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">14:00</p>
+    			    <div class="hours"><img src="img/taiyang.png" alt=""></div>
+    			    <p class="txt-key">23°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">15:00</p>
+    			    <div class="hours"><img src="img/taiyang.png" alt=""></div>
+    			    <p class="txt-key">22°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">16:00</p>
+    			    <div class="hours"><img src="img/taiyang.png" alt=""></div>
+    			    <p class="txt-key">19°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">17:00</p>
+    			    <div class="hours"><img src="img/taiyang.png" alt=""></div>
+    			    <p class="txt-key">19°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">18:00</p>
+    			    <div class="hours"><img src="img/taiyang.png" alt=""></div>
+    			    <p class="txt-key">19°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">18:31</p>
+    			    <div class="hours"><img src="img/richu.png" alt=""></div>
+    			    <p class="txt-key">日落</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">19:00</p>
+    			    <div class="hours"><img src="img/yueliang.png" alt=""></div>
+    			    <p class="txt-key">16°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">20:00</p>
+    			    <div class="hours"><img src="img/yueliang.png" alt=""></div>
+    			    <p class="txt-key">14°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">21:00</p>
+    			    <div class="hours"><img src="img/yueliang.png" alt=""></div>
+    			    <p class="txt-key">12°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">22:00</p>
+    			    <div class="hours"><img src="img/yueliang.png" alt=""></div>
+    			    <p class="txt-key">12°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">23:00</p>
+    			    <div class="hours"><img src="img/yueliang.png" alt=""></div>
+    			    <p class="txt-key">12°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">明天</p>
+    			    <div class="hours"><img src="img/yueliang.png" alt=""></div>
+    			    <p class="txt-key">10°</p>
+    			</li>
+
+    			<li>
+    			    <p class="txt-time">01:00</p>
+    			    <div class="hours"><img src="img/yueliang.png" alt=""></div>
+    			    <p class="txt-key">10°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">02:00</p>
+    			    <div class="hours"><img src="img/yueliang.png" alt=""></div>
+    			    <p class="txt-key">9°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">03:00</p>
+    			    <div class="hours"><img src="img/yueliang.png" alt=""></div>
+    			    <p class="txt-key">9°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">04:00</p>
+    			    <div class="hours"><img src="img/yueliang.png" alt=""></div>
+    			    <p class="txt-key"8°>8°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">05:00</p>
+    			    <div class="hours"><img src="img/yueliang.png" alt=""></div>
+    			    <p class="txt-key">7°</p>
+    			</li>
+    			<li>
+    			    <p class="txt-time">06:00</p>
+    			    <div class="hours"><img src="img/yueliang.png" alt=""></div>
+    			    <p class="txt-key">7°</p>
+    			</li>
+    		</ul> -->
+    	</ul>
+    </div>
+    <div class="zhuanbo2 hide">
+    	<ul class="zhuann">
+    		<!-- 
+    			<li class="future">
+    				<p class="day">昨天</p>
+    			    <p class="date">03/24</p>
+    				<p class="weathe">晴</p>
+    				<img src="img/taiyang.png" alt="" class="icon">
+    				<img src="img/2.png" alt="" class="icon i">
+    				<p class="weather">多云</p>
+    				<p class="wind">北风</p>
+    				<p class="wind">3级</p> 
+    			</li>
+    			<li class="future">
+    			    <p class="day">今天</p>
+    				 <p class="date">03/25</p>
+    				<p class="weather">晴</p>
+    				<img src="img/taiyang.png" alt="" class="icon">
+    				<img src="img/yueliang.png" alt="" class="icon i">
+    				<p class="weather">晴</p>
+    				<p class="wind">西南风</p>
+    				<p class="wind">3级</p>	 
+    			</li>
+    			<li class="future">
+    				<p class="day">明天</p>
+    			 	<p class="date">03/26</p>
+    				<p class="weather">多云</p>
+    				<img src="img/2.png" alt="" class="icon">
+    				<img src="img/31.png" alt="" class="icon i">
+    				<p class="weather">多云</p>
+    				<p class="wind">西北风</p>
+    				<p class="wind">3级</p> 
+    			</li>
+    			<li class="future">
+    				<p class="day">后天</p>
+    		 	<p class="date">03/27</p>
+    				<p class="weather">晴</p>
+    				<img src="img/taiyang.png" alt="" class="icon">
+    				<img src="img/yueliang.png" alt="" class="icon i">
+    				<p class="weather">晴</p>
+    				<p class="wind">北风</p>
+    				<p class="wind">3级</p> 
+    			</li>
+    			<li class="future">
+    				<p class="day">周三</p>
+    			<p class="date">03/28</p>
+    				<p class="weather">多云</p>
+    				<img src="img/2.png" alt="" class="icon">
+    				<img src="img/31.png" alt="" class="icon i">
+    				<p class="weather">多云</p>
+    				<p class="wind">东北风</p>
+    				<p class="wind">3级</p> 
+    			</li>
+    			<li class="future">
+    				<p class="day">周四</p>
+    			 <p class="date">03/29</p>
+    				<p class="weather">晴</p>
+    				<img src="img/taiyang.png" alt="" class="icon">
+    				<img src="img/yueliang.png" alt="" class="icon i">
+    				<p class="weather">晴</p>
+    				<p class="wind">南风</p>
+    				<p class="wind">3级</p> 
+    			</li>
+    			<li class="future">
+    				<p class="day">周五</p>
+    			 	<p class="date">03/30</p>
+    				<p class="weather">晴</p>
+    				<img src="img/taiyang.png" alt="" class="icon">
+    				<img src="img/yueliang.png" alt="" class="icon i">
+    				<p class="weather">晴</p>
+    				<p class="wind">西北风</p>
+    				<p class="wind">3级</p> 
+    			</li>
+    			<li class="future">
+    				<p class="day">周六</p>
+    				<p class="date">03/31</p>
+    				<p class="weather">多云</p>
+    				<img src="img/2.png" alt="" class="icon">
+    				<img src="img/31.png" alt="" class="icon i">
+    				<p class="weather">多云</p>
+    				<p class="wind">西北风</p>
+    				<p class="wind">3级</p> 
+    			</li>
+    		 -->
+    	</ul>
+    </div>
+    <div class="living hide">
+    	<ul>
+    	    <li>
+    	    	<span class="xianhao"></span>
+    	    	<p class="content">2和7</p>
+    	    	<p class="title">尾号限行</p>
+    	    </li>
+    	    <li>
+    	    	<span class="xianhao chuanyi"></span>
+    	    	<p class="content">舒适</p>
+    	    	<p class="title">穿衣</p>
+    	    </li>
+    	    <li>
+    	    	<span class="xianhao yusan"></span>
+    	    	<p class="content">不带伞</p>
+    	    	<p class="title">穿衣</p>
+    	    </li>
+    	    <li>
+    	    	<span class="xianhao ganmao"></span>
+    	    	<p class="content">较易发</p>
+    	    	<p class="title">感冒</p>
+    	    </li>
+    	    <li>
+    	    	<span class="xianhao xiche"></span>
+    	    	<p class="content">较适宜</p>
+    	    	<p class="title">洗车</p>
+    	    </li>
+    	    <li><span class="xianhao yundong"></span>
+    	    	<p class="content">适宜</p>
+    	    	<p class="title">运动</p>
+    	    </li>
+    	    <li><span class="xianhao fangsai"></span>
+    	    	<p class="content">中等</p>
+    	    	<p class="title">防晒</p>
+    	    </li>
+    	    <li><span class="xianhao diaoyu"></span>
+    	    	<p class="content">适宜</p>
+    	    	<p class="title">钓鱼</p>
+    	    </li>
+    	</ul>
+    </div>
+    <div class="living-table hide">
+    	<span class="current"></span>
+    	<span class="current ab"></span>
+    </div>
+    <div class="search">
+    	<div class="find">
+    		<div class="iput">
+    			<div class="logo"></div>
+    			<input type="text" class="sou" placeholder="搜索地区/景点">
+    		</div>
+    		<div class="quxiao">取消</div>
+    	</div>
+    	<div class="hot-city">
+             <p class="tle">热门城市</p>
+             <ul class="ar">
+             <li class="pot">北京</li>
+             <li class="pot mid">上海</li>
+             <li class="pot">广州</li>
+             <li class="pot">深圳</li>
+             <li class="pot mid">郑州</li>
+             <li class="pot">西安</li>
+             <li class="pot">南京</li>
+             <li class="pot mid">杭州</li>
+             <li class="pot">武汉</li>
+             <li class="pot">成都</li>
+             <li class="pot mid">沈阳</li>
+             <li class="pot">天津</li>
+             </ul>
+             <p class="tle">热门景区</p>
+             <ul class="am">
+            <!--  <li class="pot">故宫</li>
+             <li class="pot mid">颐和园</li>
+             <li class="pot">九寨沟</li>
+             <li class="pot">凤凰古城</li>
+             <li class="pot mid">秦始皇陵</li>
+             <li class="pot">龙门石窟</li>
+             <li class="pot">武陵源</li>
+             <li class="pot mid">华山</li>
+             <li class="pot">黄山</li> -->
+             </ul>
+    	</div>
+    </div>
+    <div class="footer hide">
+    	<a href="" class="pub">数据来源于中国天气网</a>
+    	<a href="" class="feedback">反馈</a>
+    	<a href="" class="lin">举报中心</a>
+        <div class="copyright">Copyright © 1998 - 2018 Tencent. All Rights Reserved</div>
+    </div>
+    </body>
+</html>
